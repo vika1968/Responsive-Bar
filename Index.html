@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home project</title>
+        <meta charset="UTF-8">   
+         <!-- Copnnect the CSS file -->  
+        <link href="./Style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>         
+            <input type="checkbox" id="dws-menu">
+            <div class="leb-menu">
+              <label for="dws-menu"><img src="./images/icono-menu.png"></label>
+            </div>
+
+            <!-- nav -->
+            <nav class="menu">              
+
+              <div class="section_logo">
+                <div class="logo"><img src="./images/logo.jpg"></div>
+              </div>
+           
+              <div class="section_main_menu">
+                <ul>
+                  <li><a href="#">Main</a></li>
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">News</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Articles</a></li>
+                  <li><a href="#">Portfolio</a></li>
+                  <li><a href="#">Contact us</a></li>
+                </ul>
+              </div>
+
+              <div class="section_social_networks">
+                 <button><img src="./Images/F.jfif" alt="Facebook"/></button>
+                 <button><img src="./Images/Y.png" alt="YouTube"/></button>
+                 <button><img src="./Images/T.png" alt="Twitter"/></button>
+              </div>
+            </nav>
+            <!-- /nav -->
+        </header>
+        <!-- /header -->
+
+       <!-- banner-->
+       <div class="banner hide-mobile">      
+        <img class="img_banner" src="./images/banner.jpg" alt="Banner">        
+       </div>
+       <!-- /banner -->
+
+       <div class="gallery" id="gallery">
+        <div class="row" id="row1">
+             <div class="div_parfume_img" id="id_div_img1"><h3 class="about">Mon Guerlain Eau de Parfum</h3><img src="./Images/1.jpg" alt="Parfume Guerlain"/></div>            
+             <div class="div_parfume_img" id="id_div_img2"><h3 class="about">Flowerbomb Eau de Parfum</h3><img src="./Images/2.jpg" alt="Parfume Flowerbomb"/></div>
+             <div class="div_parfume_img" id="id_div_img3"><h3 class="about">Baccarat Rouge 540</h3><img src="./Images/3.jpg" alt="Parfume Baccarat Rouge 540"/></div>            
+        </div>
+
+        <div class="row" id="row2">
+           <div class="div_parfume_img" id="id_div_img5"><h3 class="about">Black Opium Eau de Parfum</h3><img src="./Images/4.jpg" alt="Parfume Black Opium"/></div>
+           <div class="div_parfume_img" id="id_div_img6"><h3 class="about">Coco Mademoiselle Eau De Parfum</h3><img src="./Images/5.jpg" alt="Parfume Coco Mademoiselle"/></div>
+           <div class="div_parfume_img" id="id_div_img7"><h3 class="about">Sì Eau de Parfum</h3><img src="./Images/6.jpg" alt="Parfume Sì Eau"/></div>         
+        </div>
+    </div>
+   
+    <form id = "addParfumetoform" method="Get">  
+    <!-- <form onsubmit="return submitAdvice(this);"> -->
+    <div class="bottom_div">
+          <div class="top_div">
+              <div class ="h3top_div">Add to form</div>         
+          </div>
+        
+          <div class="form_fields">
+            <label for="add_parfume">Add parfume</label>
+              <select id="add_parfume" required > 
+                  <option value="">Please select</option><br>
+                  <option value="Chanel">Chanel</option><br>
+                  <option value="Dior">Dior</option><br>
+              </select>     
+          </div>
+          <br>
+          <div class="form_fields">   
+              <input type="Reset"  value="  Reset  " onclick="RemoveImages()"/>
+               <input type="submit" value="  Submit " style="background: #04948c;; color:white;"/>  
+               <!-- <input type="button" value="submit" onclick="fn_test()"/>  -->
+          </div>            
+    </div>
+  </form>
+
+  <!-- Copnnect the JS file -->
+  <script script src="./Style.js"> </script> 
+
+	</body>
+</html>
