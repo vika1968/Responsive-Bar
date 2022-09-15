@@ -24,18 +24,14 @@ function GetDivCount(div) {
 
 function AddSelectedParfume(rownumber, id_div_imgnumber1, id_div_imgnumber2, id_div_imgnumber3, thenewid_div_imgnumber, imgname, ParfumeCaption){
     let rowInput = document.getElementById(rownumber)
-    let div1 = document.getElementById(id_div_imgnumber1)
-   // div1.setAttribute("style", "margin: 25px;")
-    let div2 = document.getElementById(id_div_imgnumber2)
-   // div2.setAttribute("style", "margin: 25px;")
-    let div3 = document.getElementById(id_div_imgnumber3)
-  //  div3.setAttribute("style", "margin: 25px;")
+    let div1 = document.getElementById(id_div_imgnumber1)   
+    let div2 = document.getElementById(id_div_imgnumber2)  
+    let div3 = document.getElementById(id_div_imgnumber3) 
 
     let row = document.createElement("div")
 
     row.setAttribute("class","div_parfume_img")
-    row.setAttribute("id", thenewid_div_imgnumber)
-   // row.setAttribute("style", "margin: 25px;")      
+    row.setAttribute("id", thenewid_div_imgnumber)     
     row.setAttribute("display","inline-block")  
 
     div_about  = document.createElement("h3")
@@ -46,8 +42,7 @@ function AddSelectedParfume(rownumber, id_div_imgnumber1, id_div_imgnumber2, id_
     div_about.setAttribute("border", "1px solid #04948c")        
     div_about.setAttribute("fontfamily", "'calibri', 'serif'")  
     div_about.setAttribute("fontsize", "20px;")
-    div_about.setAttribute("textshadow", "4px 4px 4px #aaa")
-    
+    div_about.setAttribute("textshadow", "4px 4px 4px #aaa")    
     div_about.setAttribute("color", "#04948c")
     div_about.setAttribute("textdecoration", "none")
     div_about.setAttribute("backgroundcolor", "whitesmoke")
@@ -62,9 +57,21 @@ function AddSelectedParfume(rownumber, id_div_imgnumber1, id_div_imgnumber2, id_
     img.setAttribute("height","300px;")
     img.setAttribute("alt", ParfumeCaption)
 
-    row.appendChild (img)    
+    row.appendChild (img)   
+   
+    let description = document.createElement("p")    
+    description.setAttribute("class","parfume_description")
+
+    if (ParfumeCaption == "Chanel") {
+      description.innerText="You're lounging in a French garden surrounded by freshly blooming peonies and roses. A few spritzes of this Dior floral fragrance will transport you there. Picture this: You're lounging in a French garden surrounded by freshly blooming."     
+    }
+   else if(ParfumeCaption == "Dior") {
+      description.innerText="Inspired by garden parties, this fresh-smelling Viktor & Rolf fragrance is housed in a cheeky grenade-shaped bottle and earns its cult-favorite status by exploding with the super feminine, warm floral scent of jasmine, freesia and rose."     
+    }
   
-    rowInput.appendChild(row)    
+    row.appendChild (description)  
+
+    rowInput.appendChild(row) 
 }
 
 //  function submitAdvice(f) {
@@ -106,15 +113,15 @@ function ShowTheNewAddedParfumes(){
 }
 
 //Remove added images
-function RemoveImages(){
-  let rem_img4 = document.getElementById("id_div_img4")
-  let rem_img8 = document.getElementById("id_div_img8")
+function RemoveImages() {
+    let rem_img4 = document.getElementById("id_div_img4")
+    let rem_img8 = document.getElementById("id_div_img8")
 
-  if (rem_img4 != null){
-       rem_img4.remove()
-  }
+    if (rem_img4 != null){
+        rem_img4.remove()
+    }
 
- if (rem_img8 != null){  
-    rem_img8.remove()
-  }
+    if (rem_img8 != null){  
+        rem_img8.remove()
+    }
 }

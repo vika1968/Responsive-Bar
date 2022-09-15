@@ -6,7 +6,7 @@ body {
 }
 
 .section_logo .logo img {
-  height: auto;
+  height: 52px;
   width: 100%;
   opacity: 2.8;
   margin: 0 0 10px 0;
@@ -77,6 +77,12 @@ header nav, header .leb-menu {
 .menu .section_social_networks button img {
   width: 25px;
   height: 25px;
+  transition: all 2.5s linear;
+}
+.menu .section_social_networks button img:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  scale: 125%;
 }
 
 .banner {
@@ -102,6 +108,20 @@ header nav, header .leb-menu {
   text-decoration: none;
   background-color: whitesmoke;
   text-align: center;
+}
+
+.parfume_description {
+  margin: 0;
+  padding: 0;
+  width: 0px;
+  height: 0;
+  font-size: 0px;
+  color: #042e2c;
+  text-decoration: none;
+  background-color: #FFE5B4;
+  text-align: center;
+  opacity: 0;
+  transition: 2s;
 }
 
 .bottom_div {
@@ -156,7 +176,23 @@ header label:hover {
 .gallery .row .div_parfume_img img:hover {
   opacity: 0.5;
   scale: 102%;
-  border: 1px solid red;
+  border-radius: 20px;
+  border: 1px solid #04948c;
+}
+.gallery .row .div_parfume_img img:hover ~ .parfume_description {
+  opacity: 1;
+  transition: 2s;
+  margin: 0;
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+  border: 2px solid #04948c;
+  font-family: "calibri", serif;
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+  background-color: #f3ecdf;
+  text-align: center;
 }
 
 @media all and (max-width: 980px) {
@@ -206,7 +242,6 @@ header label:hover {
   .gallery .row .div_parfume_img {
     width: auto;
     margin: 0 25px;
-    background-color: red;
   }
 }
 @media all and (max-width: 800px) {
@@ -223,7 +258,6 @@ header label:hover {
   .gallery .row .div_parfume_img {
     margin: 0 25px;
     width: auto;
-    background-color: blue;
   }
 }
 @media all and (max-width: 650px) {
@@ -240,6 +274,5 @@ header label:hover {
   .gallery .row .div_parfume_img {
     width: 100%;
     margin: 0 50px;
-    background-color: green;
   }
 }/*# sourceMappingURL=Style.css.map */
