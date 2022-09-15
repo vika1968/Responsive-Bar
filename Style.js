@@ -1,7 +1,7 @@
 
 // Get the form element
 let form = document.getElementById("addParfumetoform")
-form.addEventListener("submit", onSubmit)// est' eyrya, oprededlit' kogda ono proizoydet
+form.addEventListener("submit", onSubmit)
 
 //On Submit add the image
 function onSubmit(ev){ 
