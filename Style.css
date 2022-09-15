@@ -2,7 +2,7 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   padding: 0;
   margin: 0;
-  background-color: #ffffff;
+  background-color: #f2f8f7;
 }
 
 .section_logo .logo img {
@@ -94,7 +94,7 @@ header nav, header .leb-menu {
 .banner .img_banner {
   width: 1500px;
   height: 100px;
-  margin: 1pxx auto;
+  margin: 1px auto;
 }
 
 .about {
@@ -111,7 +111,7 @@ header nav, header .leb-menu {
 }
 
 .parfume_description {
-  margin: 0;
+  margin-top: 16px;
   padding: 0;
   width: 0px;
   height: 0;
@@ -137,7 +137,7 @@ header nav, header .leb-menu {
 .bottom_div .top_div .h3top_div {
   padding-top: 3px;
   padding-bottom: 4px;
-  font-size: 16px;
+  font-size: 12px;
   font-family: Helvetica, Arial, sans-serif;
   text-transform: uppercase;
 }
@@ -170,19 +170,21 @@ header label:hover {
 .gallery .row .div_parfume_img img {
   width: 300px;
   height: 300px;
+  border-radius: 20px;
+  border: 1px solid #04948c;
   cursor: pointer;
   transition: all 2.5s linear;
 }
 .gallery .row .div_parfume_img img:hover {
   opacity: 0.5;
-  scale: 102%;
-  border-radius: 20px;
-  border: 1px solid #04948c;
+  scale: 110%;
+  border-radius: 60px;
+  border: 1px solid #940404;
 }
 .gallery .row .div_parfume_img img:hover ~ .parfume_description {
   opacity: 1;
   transition: 2s;
-  margin: 0;
+  margin-top: 16px;
   width: 300px;
   height: auto;
   border-radius: 20px;
