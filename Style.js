@@ -1,6 +1,6 @@
 
 // Get the form element
-let form = document.getElementById("addParfumetoform")
+let form = document.getElementById("addParfumetoform") // as HTMLFormElement  -- this is for Typescript only
 form.addEventListener("submit", onSubmit)
 
 //On Submit add the image
@@ -16,18 +16,18 @@ function GetDivParfumesCount(divname) {
   return DivCount
 }
 
+//Receive Div Count
 function GetDivCount(div) {  
-  let divs = document.getElementById(div).querySelectorAll(".div_parfume_img")
+  let divs = document.getElementById(div).querySelectorAll(".div_parfume_img")   // as HTMLDivElement  -- this is for Typescript only
   let DivCount = divs.length   
   return DivCount
 }
 
-function AddSelectedParfume(rownumber, id_div_imgnumber1, id_div_imgnumber2, id_div_imgnumber3, thenewid_div_imgnumber, imgname, ParfumeCaption){
-    let rowInput = document.getElementById(rownumber)
-    let div1 = document.getElementById(id_div_imgnumber1)   
-    let div2 = document.getElementById(id_div_imgnumber2)  
-    let div3 = document.getElementById(id_div_imgnumber3) 
+//Add Selected Parfumet (image)
+function AddSelectedParfume(rownumber, thenewid_div_imgnumber, imgname, ParfumeCaption){
+    let rowInput = document.getElementById(rownumber)  // as HTMLInputElement  -- this is for Typescript only
 
+    //let row:HTLDivElement = document.createElement("div")  this is for Typescript only
     let row = document.createElement("div")
 
     row.setAttribute("class","div_parfume_img")
@@ -92,19 +92,19 @@ function ShowTheNewAddedParfumes(){
     if (ParfumeToAdd.value == "Chanel") {        
           imgName = "7.jpg" 
           if(ResFirstDivCount < 4){   
-              AddSelectedParfume("row1", "id_div_img1", "id_div_img2", "id_div_img3", "id_div_img4", imgName, "Chanel")   
+              AddSelectedParfume("row1", "id_div_img4", imgName, "Chanel")   
           }
           else if (ResSecondDivCount < 4){
-              AddSelectedParfume("row2", "id_div_img5", "id_div_img6", "id_div_img7", "id_div_img8", imgName, "Chanel")  
+              AddSelectedParfume("row2", "id_div_img8", imgName, "Chanel")  
           }
 
     } else if (ParfumeToAdd.value == "Dior") {     
             imgName = "9.jpg"   
             if(ResFirstDivCount < 4){   
-              AddSelectedParfume("row1", "id_div_img1", "id_div_img2", "id_div_img3", "id_div_img4", imgName, "Dior")    
+              AddSelectedParfume("row1", "id_div_img4", imgName, "Dior")    
           }
           else if (ResSecondDivCount < 4){
-              AddSelectedParfume("row2", "id_div_img5", "id_div_img6", "id_div_img7", "id_div_img8", imgName, "Dior")  
+              AddSelectedParfume("row2", "id_div_img8", imgName, "Dior")  
           }
 
     } else {
