@@ -52,7 +52,7 @@ function AddSelectedParfume(rownumber, thenewid_div_imgnumber, imgname, ParfumeC
     div_about.innerText = ParfumeCaption 
 
     let img = document.createElement("img")
-    img.setAttribute("src","./Images/" + imgname)    
+    img.setAttribute("src","./images/" + imgname)    
     img.setAttribute("width","300px;")
     img.setAttribute("height","300px;")
     img.setAttribute("alt", ParfumeCaption)
@@ -113,7 +113,7 @@ function ShowTheNewAddedParfumes(){
 }
 
 //Remove added images
-function RemoveImages() {
+function Removeimages() {
     let rem_img4 = document.getElementById("id_div_img4")
     let rem_img8 = document.getElementById("id_div_img8")
 
