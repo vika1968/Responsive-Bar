@@ -52,7 +52,7 @@ function AddSelectedParfume(rownumber, thenewid_div_imgnumber, imgname, ParfumeC
     div_about.innerText = ParfumeCaption 
 
     let img = document.createElement("img")
-    img.setAttribute("src","./images/7.jpg")// + imgname)    
+    img.setAttribute("src","./images/" + imgname)    
     img.setAttribute("width","300px;")
     img.setAttribute("height","300px;")
     img.setAttribute("alt", ParfumeCaption)
