@@ -270,11 +270,36 @@ header label:hover {
     display: none;
   }
   .gallery .row {
-    margin: 0 50px;
     gap: 0px;
   }
   .gallery .row .div_parfume_img {
     width: 100%;
     margin: 0 50px;
+    background-color: green;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 650px) {
+  .menu {
+    display: block;
+  }
+  .hide-mobile {
+    display: none;
+  }
+  .gallery .row .div_parfume_img {
+    background-color: yellow(92, 128, 0);
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 650px) {
+  .menu {
+    display: list-item;
+  }
+  .hide-mobile {
+    display: none;
+  }
+  .gallery .row {
+    display: row;
+  }
+  .gallery .row .div_parfume_img {
+    background-color: yellow(92, 128, 0);
   }
 }/*# sourceMappingURL=Style.css.map */
