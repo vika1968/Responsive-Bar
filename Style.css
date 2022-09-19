@@ -126,7 +126,8 @@ header nav, header .leb-menu {
 
 .bottom_div {
   margin: 0 auto;
-  width: 50%;
+  width: 30%;
+  justify-content: center;
 }
 .bottom_div .top_div {
   background: #04948c;
@@ -140,6 +141,10 @@ header nav, header .leb-menu {
   font-size: 12px;
   font-family: Helvetica, Arial, sans-serif;
   text-transform: uppercase;
+}
+.bottom_div .form_fields {
+  margin: 0 auto;
+  width: 300px;
 }
 
 /*===== MEDIA ======*/
@@ -265,8 +270,15 @@ header label:hover {
   .hide-mobile {
     display: none;
   }
+  .gallery {
+    align-items: center;
+  }
   .gallery .row {
     margin: 0 55px;
     gap: 0px;
+  }
+  .bottom_div {
+    margin: 0 auto;
+    width: 50%;
   }
 }/*# sourceMappingURL=Style.css.map */

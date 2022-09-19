@@ -135,13 +135,15 @@ header nav, header .leb-menu {
 
 .bottom_div {   
    margin: 0 auto;
-   width: 50%;
+   width: 30%;
+   justify-content: center;
 
    .top_div {  
       background: #04948c;
       color:white;        
       text-align: center;
       margin: 5px auto;
+     // width: 60%;
 
       .h3top_div {
          padding-top: 3px;
@@ -152,10 +154,10 @@ header nav, header .leb-menu {
       }
    }
 
-   // .form_fields {
-   //    margin: 0 auto;
-   //    width: auto; //300px; 
-   // }       
+    .form_fields {
+       margin: 0 auto;            
+       width: 300px; 
+   }       
 }  
 
 
@@ -309,14 +311,16 @@ gap: 10px;
       display: none;
    }
 
-   .gallery .row {
-      margin: 0 55px;
-      gap: 0px;
+   .gallery{
+      align-items: center;
+       .row {
+         margin: 0 55px;
+         gap: 0px;      
+       }  
+    }  
    
-         .div_parfume_img {         
-         // width: auto;   
-            //margin: 0 auto;     
-           // background-color: green;    
-         }   
-   }        
+   .bottom_div {   
+      margin: 0 auto;
+      width: 50%;
+   }
 }
