@@ -280,43 +280,43 @@ gap: 10px;
 }
 
 @media all and (max-width: 800px) {
-.menu {
-   display: block;         
+   .menu {
+      display: block;         
+   }
+
+   .hide-mobile {
+      display: none;
+   }  
+
+   .gallery .row {
+      margin: 0;
+      gap: 0px;
+
+         .div_parfume_img {           
+            margin: 0 25px; 
+            width: auto;          
+            background-color: blue;     
+         }
+   }
 }
 
-.hide-mobile {
-   display: none;
-}  
+   @media all and (max-width: 650px) {  //small monitor
+   .menu {
+      display: block;   
+   }  
 
-.gallery .row {
-   margin: 0;
-   gap: 0px;
+   .hide-mobile {
+      display: none;
+   }
 
-      .div_parfume_img {           
-         margin: 0 25px; 
-         width: auto;          
-       //  background-color: blue;     
-      }
-}
-}
-
-@media all and (max-width: 650px) {  //small monitor
-.menu {
-   display: block;   
-}  
-
-.hide-mobile {
-   display: none;
-}
-
-.gallery .row {
-   margin: 0 50px;
-   gap: 0px;
-
-      .div_parfume_img {         
-         width: 100%;   
-         margin: 0 50px;     
-        // background-color: green;    
-      }   
-}         
+   .gallery .row {
+      margin: 0 55px;
+      gap: 0px;
+   
+         .div_parfume_img {         
+         // width: auto;   
+            //margin: 0 auto;     
+            background-color: green;    
+         }   
+   }        
 }

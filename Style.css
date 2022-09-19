@@ -260,6 +260,7 @@ header label:hover {
   .gallery .row .div_parfume_img {
     margin: 0 25px;
     width: auto;
+    background-color: blue;
   }
 }
 @media all and (max-width: 650px) {
@@ -270,11 +271,10 @@ header label:hover {
     display: none;
   }
   .gallery .row {
-    margin: 0 50px;
+    margin: 0 55px;
     gap: 0px;
   }
   .gallery .row .div_parfume_img {
-    width: 100%;
-    margin: 0 50px;
+    background-color: green;
   }
 }/*# sourceMappingURL=Style.css.map */
