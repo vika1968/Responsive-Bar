@@ -126,7 +126,7 @@ header nav, header .leb-menu {
 
 .bottom_div {
   margin: 0 auto;
-  width: 40%;
+  width: 50%;
 }
 .bottom_div .top_div {
   background: #04948c;
@@ -140,10 +140,6 @@ header nav, header .leb-menu {
   font-size: 12px;
   font-family: Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-}
-.bottom_div .form_fields {
-  margin: 0 auto;
-  width: 300px;
 }
 
 /*===== MEDIA ======*/
@@ -260,7 +256,6 @@ header label:hover {
   .gallery .row .div_parfume_img {
     margin: 0 25px;
     width: auto;
-    background-color: blue;
   }
 }
 @media all and (max-width: 650px) {
@@ -273,8 +268,5 @@ header label:hover {
   .gallery .row {
     margin: 0 55px;
     gap: 0px;
-  }
-  .gallery .row .div_parfume_img {
-    background-color: green;
   }
 }/*# sourceMappingURL=Style.css.map */

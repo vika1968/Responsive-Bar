@@ -20,7 +20,7 @@ div .section_main_menu {
 }  
 
 /* Navigation */
-// Hide the checkbox amd label
+// Hide the checkbox and label
 #dws-menu, header label {
   display: none;
 }
@@ -135,7 +135,7 @@ header nav, header .leb-menu {
 
 .bottom_div {   
    margin: 0 auto;
-   width: 40%;
+   width: 50%;
 
    .top_div {  
       background: #04948c;
@@ -152,10 +152,10 @@ header nav, header .leb-menu {
       }
    }
 
-   .form_fields {
-      margin: 0 auto;
-      width: 300px; 
-   }       
+   // .form_fields {
+   //    margin: 0 auto;
+   //    width: auto; //300px; 
+   // }       
 }  
 
 
@@ -295,7 +295,7 @@ gap: 10px;
          .div_parfume_img {           
             margin: 0 25px; 
             width: auto;          
-            background-color: blue;     
+         //   background-color: blue;     
          }
    }
 }
@@ -316,7 +316,7 @@ gap: 10px;
          .div_parfume_img {         
          // width: auto;   
             //margin: 0 auto;     
-            background-color: green;    
+           // background-color: green;    
          }   
    }        
 }
