@@ -2,7 +2,7 @@ body {
    font-family: Helvetica, Arial, sans-serif;
    padding: 0;
    margin: 0;
-   background-color:#f2f8f7;// #ffffff;        
+   background-color:#f2f8f7;     
  }
 
 .section_logo .logo img {    
@@ -142,8 +142,7 @@ header nav, header .leb-menu {
       background: #04948c;
       color:white;        
       text-align: center;
-      margin: 5px auto;
-     // width: 60%;
+      margin: 5px auto;  
 
       .h3top_div {
          padding-top: 3px;
@@ -236,7 +235,7 @@ gap: 10px;
    } 
 
    .menu {
-      display: block; // here to check
+      display: block; 
       position: absolute;
       width: 200px;
       margin-left: -200px;
@@ -275,8 +274,7 @@ gap: 10px;
 
       .div_parfume_img {    
          width: auto;
-         margin: 0 25px; 
-       //  background-color: red;   
+         margin: 0 25px;       
        }  
 }   
 }
@@ -296,9 +294,8 @@ gap: 10px;
 
          .div_parfume_img {           
             margin: 0 25px; 
-            width: auto;          
-         //   background-color: blue;     
-         }
+            width: auto;        
+          }
    }
 }
 
